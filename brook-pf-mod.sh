@@ -669,8 +669,8 @@ Resolve_Hostname_To_IP(){
 }
 check_sys
 action=$1
-if [[ "${action}" == "monitor" ]]; then
-    crontab_monitor_brook
+if [[ "${action}" == "r" ]]; then
+    Restart_brook
 else
     echo && echo -e "  Brook 端口转发 一键管理脚本修改版(DDNS支持) ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
   
